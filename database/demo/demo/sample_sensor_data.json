@@ -1,0 +1,7 @@
+{
+  "heart_rate": 125,
+  "temperature": 29,
+  "humidity": 70,
+  "fall_detected": true,
+  "door_open": false
+}
