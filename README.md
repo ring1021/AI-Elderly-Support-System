@@ -19,12 +19,12 @@ AI-Elderly-Support-System/
 │ │ ├── guardian_notification_demo.py
 │ │ ├── reminder_demo.py
 │ │ └── guardian_dashboard_demo.py
+│ │
 │ └── schema.sql
 │
 ├── README.md
 ├── LICENSE
 └── .gitignore
-
 ---
 
 ## System Modules
@@ -85,51 +85,34 @@ Provides a simulated interface for:
 
 ## How to Run the Project
 
+
 ### 1. Clone Repository
+
 ```bash
 git clone https://github.com/ring1021/AI-Elderly-Support-System.git
 cd AI-Elderly-Support-System
+```
 
 ### 2. Initialize Database
-Run the SQL schema file:
+
+```bash
 sqlite3 database.db < database/demo/schema.sql
+```
 
-3. Run Sensor Simulation
+### 3. Run Sensor Simulation
+
+```bash
 python database/demo/alert_detection_demo.py
+```
 
-4. Run Alert System
+### 4. Run Alert System
+
+```bash
 python database/demo/guardian_notification_demo.py
+```
 
-5. Run Dashboard Demo
+### 5. Run Dashboard Demo
+
+```bash
 python database/demo/guardian_dashboard_demo.py
-
-
-### Key Features
-Real-time simulated monitoring system
-Multi-sensor data fusion (wearable + environment)
-Rule-based anomaly detection
-Priority-based alert system
-Caregiver notification simulation
-Structured database logging
-
-### System Architecture
-The system follows a layered architecture:
-Data Layer: Sensor simulation + database
-Processing Layer: Alert detection engine
-Application Layer: Dashboard + notification system
-
-### Limitations
-No real hardware integration (fully simulation-based)
-No machine learning model implemented (rule-based logic only)
-Sensor noise and network delay not fully modeled
-
-### Future Improvements
-Integration with real IoT devices (wearables and home sensors)
-Machine learning-based anomaly detection
-Cloud-based deployment for multi-user scalability
-Mobile application development for caregivers
-Enhanced data privacy and encryption mechanisms
-
-###Author
-Student Project – AI-assisted Elderly Care System
-For academic demonstration purposes only.
+```
